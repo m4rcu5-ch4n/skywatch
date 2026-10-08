@@ -1,0 +1,15 @@
+{
+  "updated": null,
+  "source": "demo",
+  "demo": true,
+  "quotes": {
+    "AC":   { "last": 19.40, "changePct": -0.8 },
+    "AAL":  { "last": 13.10, "changePct": 1.2 },
+    "DAL":  { "last": 55.25, "changePct": 0.4 },
+    "UAL":  { "last": 88.60, "changePct": -1.5 },
+    "LUV":  { "last": 31.70, "changePct": 0.1 },
+    "JBLU": { "last": 5.20,  "changePct": -2.3 },
+    "JETS": { "last": 24.80, "changePct": 0.3 },
+    "UNG":  { "last": 14.90, "changePct": 2.1 }
+  }
+}

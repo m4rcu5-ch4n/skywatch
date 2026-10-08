@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
+  "headers": [
+    { "source": "/data/market.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=60" }] }
+  ]
+}

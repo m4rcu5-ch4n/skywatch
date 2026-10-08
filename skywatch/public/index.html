@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skywatch Signals</title>
+  <meta name="description" content="Weather and air-traffic signals for airline and energy stocks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="radar" aria-hidden="true"></span>
+      <div>
+        <h1>Skywatch</h1>
+        <p class="sub">Weather × air traffic × markets</p>
+      </div>
+    </div>
+    <div class="status" id="status">Loading…</div>
+  </header>
+
+  <main>
+    <section aria-labelledby="sig-h">
+      <h2 id="sig-h">Signals</h2>
+      <div class="cards" id="signals"></div>
+    </section>
+
+    <section class="split">
+      <div>
+        <h2>Hubs</h2>
+        <div class="table-wrap">
+          <table id="hubs">
+            <thead><tr>
+              <th>Hub</th><th>Gust 24h</th><th>Rain 24h</th><th>Temp</th><th>Aircraft</th><th>Disruption</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>Wind map</h2>
+        <iframe class="map" title="Windy wind map"
+          src="https://embed.windy.com/embed2.html?lat=39.5&lon=-88&detailLat=39.5&detailLon=-88&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2>Market snapshot</h2>
+      <div class="table-wrap">
+        <table id="market">
+          <thead><tr><th>Ticker</th><th>Name</th><th>Last</th><th>Change</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="fine" id="market-note"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Signals are simple, transparent heuristics for research and education — not financial advice.
+      Weather: <a href="https://www.windy.com">Windy.com</a>. Flights: <a href="https://www.flightradar24.com">Flightradar24</a>.
+      Quotes: Interactive Brokers snapshot.</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
