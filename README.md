@@ -32,3 +32,6 @@ git push
 # Install Node.js
 winget install OpenJS.NodeJS.LTS * npm command comes with it!
 node --version
+
+# Set-ExecutionPolicy for system
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
