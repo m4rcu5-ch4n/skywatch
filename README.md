@@ -28,3 +28,7 @@ gh repo view --web
 git add .
 git commit -m "What I changed"
 git push
+
+# Install Node.js
+winget install OpenJS.NodeJS.LTS * npm command comes with it!
+node --version
