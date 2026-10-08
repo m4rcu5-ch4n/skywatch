@@ -1,6 +1,6 @@
 # Skywatch
 
-A small public website that turns **Windy** weather forecasts and **Flightradar24** air-traffic counts into simple, transparent signals for airline and natural-gas stocks, with prices from **Interactive Brokers**.
+A small public website that turns **Windy** weather forecasts and **Flightradar24** air-traffic from air and airport, and company stocks price from **Interactive Brokers**.
 
 > Signals are heuristics for research and education, not financial advice.
 
